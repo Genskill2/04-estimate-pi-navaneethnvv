@@ -22,12 +22,11 @@ int main(void) {
       abort();
     }
   }
-  printf("\npi = %f\n",pi);
 }
 float wallis_pi(int n) {
 float pro=1;
-for(int f=1; f<= n;f++) {
-pro = pro * 4 * f * f/(4 * f*f - 1);
+for(int i=1; i<= n;i++) {
+pro = pro * 4 * i * i/(4 * i*i - 1);
 }
  return pro*2;
  }
